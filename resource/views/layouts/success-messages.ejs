@@ -1,0 +1,12 @@
+<% try { if(success.length > 0 ) { %>
+    <div class="success alert-success alert-dismissible p-4">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span>×</span>
+        </button>
+        <% success.forEach(success => { %>
+            <%= success %><br>
+        <% }) %>
+    </div>
+<% }}catch (e) {
+
+} %>
